@@ -18,7 +18,7 @@ var password=document.getElementById("password").value;
     }
 
     if(username!=""){
-        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com")&& password=="user" )
+        if((username=="vinesh.gandhe@gmail.com" || username=="scheemala@gainsight.com" || username=="shivani.reddy00@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com")&& password=="user" )
         {
             alert("valid user");
             b = username.substr(6, 5);
@@ -61,6 +61,36 @@ var password=document.getElementById("password").value;
                             // flat custom attributes
                         });
                 } else if (username=="vgande@gainsight.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a2, //Required
+                            "name": myaccount.a2,
+                            // flat custom attributes
+                        });
+                } else if (username=="scheemala@gainsight.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a2, //Required
+                            "name": myaccount.a2,
+                            // flat custom attributes
+                        });
+                  } else if (username=="shivani.reddy00.com") {
                     aptrinsic('identify', {
                             //User Fields
                             "id": id, // Required for logged in app users
