@@ -1,17 +1,17 @@
 //    Adding JQuery
-var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
-// Then bind the event to the callback function.
-// There are several events for cross browser compatibility.
-script.onreadystatechange = handler;
-script.onload = handler;
-// Fire the loading
-head.appendChild(script);
+// var head = document.getElementsByTagName('head')[0];
+// var script = document.createElement('script');
+// script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js";
+// // Then bind the event to the callback function.
+// // There are several events for cross browser compatibility.
+// script.onreadystatechange = handler;
+// script.onload = handler;
+// // Fire the loading
+// head.appendChild(script);
 
-function handler() {
-    console.log('jquery added :)');
-}
+// function handler() {
+//     console.log('jquery added :)');
+// }
 
 var config={kcAllowedFuncNames:["zendeskchat"]};
 
@@ -20,7 +20,8 @@ function zendeskchat(){
     var head = document.getElementsByTagName('head')[0];
     var script = document.createElement('script');
     script.id = "ze-snippet";
-    script.src = "https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8";
+    // script.src = "https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8";
+    script.src="https://static.zdassets.com/ekr/snippet.js?key=f46f2180-8163-4da7-8ed2-3cd88d17fe22";
     script.onreadystatechange= handler1;
     script.onload = handler1;
 
