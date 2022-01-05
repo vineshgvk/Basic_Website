@@ -20,11 +20,9 @@ function zendeskchat(){
     var head = document.getElementsByTagName('head')[0];
     var script = document.createElement('script');
     script.id = "ze-snippet";
-    // script.src = "https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8";
     script.src="https://static.zdassets.com/ekr/snippet.js?key=f46f2180-8163-4da7-8ed2-3cd88d17fe22";
     script.onreadystatechange= handler1;
     script.onload = handler1;
-
     head.appendChild(script);
 
     function handler1(){
@@ -32,10 +30,7 @@ function zendeskchat(){
     }
 
 }
-
-
-
-
+//PX tag configuration
   (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
