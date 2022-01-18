@@ -13,6 +13,7 @@
 //     console.log('jquery added :)');
 // }
 
+//temp commit
 var config={kcAllowedFuncNames:["zendeskchat"]};
 
 function zendeskchat(){
