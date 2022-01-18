@@ -20,6 +20,8 @@ function zendeskchat(){
     var head = document.getElementsByTagName('head')[0];
     var script = document.createElement('script');
     script.id = "ze-snippet";
+    // script.src = "https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8";
+    //script.src="https://static.zdassets.com/ekr/snippet.js?key=f46f2180-8163-4da7-8ed2-3cd88d17fe22";
     script.src="https://static.zdassets.com/ekr/snippet.js?key=ee4b2577-f8b1-4994-bd51-287764be0680";
 
     script.onreadystatechange= handler1;
