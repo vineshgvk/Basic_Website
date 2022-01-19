@@ -42,7 +42,7 @@ function zendeskchat(){
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-K0EYK7ZWBNRU-2",config);
 
-//testing the static file load of aptrinsic.js file
+// static file load of aptrinsic.js file
 
 // (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
 //     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
@@ -50,7 +50,7 @@ function zendeskchat(){
 //   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 // })(window,document,"https://vineshgvk.github.io/Basic_Website/aptrinsic.js","AP-K0EYK7ZWBNRU-2",config);
 
-// window.location = "https://vineshgvk.github.io/Basic_Website/aptrinsic.js";
+
 
 //   iframe tag configure---start
 
@@ -82,12 +82,6 @@ function initializeGainsightPX()
 //   iframe tag configure---end
 
 
-// var config={kcAllowedFuncNames:["zendeskchat"]};
-
-// function zendeskchat(){
-//     // api call for the chat bot
-// }
-
 function validate(username)
 {
 var username=document.getElementById("username").value;
@@ -116,6 +110,7 @@ var password=document.getElementById("password").value;
 //                             "useractive" :attrib_value,
 //                             "checkattrib":attrib_value,
                             "customtest":"working",
+                            
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
                         },
