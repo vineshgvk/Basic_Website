@@ -109,7 +109,7 @@ var password=document.getElementById("password").value;
                             "gender": "male",
 //                             "useractive" :attrib_value,
 //                             "checkattrib":attrib_value,
-                            "customtest":"working",
+                            "customtest":"{working:yes,default:no,license:free}",
                             
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
