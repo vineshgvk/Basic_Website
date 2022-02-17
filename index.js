@@ -95,7 +95,7 @@ var password=document.getElementById("password").value;
     }
 
     if(username!=""){
-        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username="shivanicheemala99@gmail.com")&& password=="user" )
+        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
         {
             alert("valid user");
             b = username.substr(6, 5);
