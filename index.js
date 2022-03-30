@@ -96,7 +96,7 @@ var password=document.getElementById("password").value;
     }
 
     if(username!=""){
-        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
+        if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com" || username="sgoparaju@gainsight.com")&& password=="user" )
         {
             alert("valid user");
             b = username.substr(6, 5);
@@ -139,7 +139,43 @@ var password=document.getElementById("password").value;
                             "name": myaccount.a3,
                             // flat custom attributes
                         });
-                } else if (username=="vgande@gainsight.com") {
+                    
+                } 
+            else if (username=="sgoparaju@gainsight.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": "sgoparaju@gainsight.com"
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a3, //Required
+                            "name": myaccount.a3,
+                            // flat custom attributes
+                        });
+                    
+                } 
+             else if (username=="sgoparaju@gainsight.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": "12345", // Required for logged in app users
+                            "email": "sgoparaju@gainsight.com"
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a3, //Required
+                            "name": myaccount.a3,
+                            // flat custom attributes
+                        });
+                    
+                } 
+            else if (username=="vgande@gainsight.com") {
                     aptrinsic('identify', {
                             //User Fields
                             "id": id, // Required for logged in app users
