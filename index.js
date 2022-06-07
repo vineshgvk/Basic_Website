@@ -106,7 +106,7 @@ var password=document.getElementById("password").value;
 
     }
 
-    if((username=="demosegment@gmail.com"){
+    if(username=="demosegment@gmail.com"){
 
     
 analytics.identify('segmentdemo1', {
