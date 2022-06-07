@@ -113,6 +113,12 @@ analytics.identify('segmentdemo1', {
     email: 'demosegment@gmail.com',
     name: 'Segment Demo'
   });
+
+  alert("Logged in user id :");
+            //window.open("/HTML/home.html");
+            window.location = "https://vineshgvk.github.io/Basic_Website/home.html";
+      
+            return false;
 }
 else
         {
