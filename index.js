@@ -37,7 +37,7 @@ function zendeskchat(){
 //px self tag AP-K0EYK7ZWBNRU-2
 //Dileep's tag key AP-6WAJA3OATHHI-2
 //PX tag configuration
-  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+  (function(n,t,a,e){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
