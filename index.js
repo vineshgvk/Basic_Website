@@ -14,7 +14,7 @@
 // }
 
 //temp commit
-var config={kcAllowedFuncNames:["zendeskchat"]};
+var config={kcAllowedFuncNames:["zendeskchat"],"secureCookie":true};
 
 function zendeskchat(){
     // api call for the chat bot
