@@ -232,6 +232,12 @@ h1{
 	cursor: pointer;
 }
 
+
+.ui.search{
+
+  margin-left: 650px; 
+  width: 21%;
+}
 /* $('.clearable.example .ui.selection.dropdown')
   .dropdown{
     clearable: true
