@@ -396,6 +396,11 @@ function transactiondone(ev1) {
         
 // }
 
+// analytics.track('Form submitted', {
+//     product: 'book',
+//     title: 'The Name of the Wind'
+//   });
+
 // Zendesk chat bot
 // <!-- Start of gainsightvkg Zendesk Widget script -->
 // <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ec8c6ebf-c30b-4913-8eb7-8e275f5a03b8"> </script>

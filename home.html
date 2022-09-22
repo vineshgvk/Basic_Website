@@ -62,10 +62,45 @@
 		<div>
 		<button type="button" class="disable-btn" disabled>Disabled Button!</button>
 		<button class="clickme-cls" >Click me zendesk bot</button>
-  		<button class="clickme-cls" onclick="analytics.track('Form submitted', {
+  		<button class="clickme-cls" 
+			onclick="analytics.track({
+
+				        anonymousId: '1',
+						
+				        event: 'slack-event',
+						
+				        properties: {
+						
+				        accountId: '62b85af4ce3e47000fbdfda6',
+						
+				        accountName: 'payments demo',
+						
+				        alertGroup: '2e772fdbaaaa48369f90e5494c387b5a',
+						
+				        description: 'Acknowledge for : a7f9cb04-c7ea-488d-98c5-3f29ab299109',
+						
+				        eventType: 'slack_acknowledge',
+						
+				        slackChannel: 'payments',
+						
+				        slackWorkspace: 'Anodot',
+						
+				        userName: 'yariv'
+						
+				        }
+						
+				        });"
+				
+						
+				
+
+
+		>Click me2</button>
+
+		<!-- onclick="analytics.track('Form submitted', {
             product: 'book',
             title: 'The Name of the Wind'
-          });">Click me2</button>
+          });" -->
 	</div>
 <!-- 	<script>
 		customElements.define('show-hello', class extends HTMLElement {
