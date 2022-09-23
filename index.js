@@ -387,6 +387,7 @@ function transactiondone(ev1) {
                     
                         "Name": "Too many Support Tickets open for customer via PX",
                        // "SFDCID": "TZHYUJB8QBNHYUIIY",//Used to Resolve the CompanyID
+                       "CompanyId": "1P02IPMAEL4M3CQGY4QNW5UXA45SWOQN38NL",
                        "OwnerId":"1P01CJ1JNHV8EEATI004RNBLLWPZ98UINC63",
                         //"OwnerEmail": "hsharma@gainsight.com", //Used to Resolve the OwnerID
                         "DueDate": "2022-10-10",
