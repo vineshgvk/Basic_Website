@@ -354,6 +354,21 @@ function transactiondone(ev1) {
 
 
 
+//PX API CALL
+    // function UserAction() {
+    //     var xhttp = new XMLHttpRequest();
+    //     xhttp.onreadystatechange = function() {
+    //          if (this.readyState == 4 && this.status == 200) {
+    //              alert(this.responseText);
+    //          }
+    //     };
+    //     xhttp.open("POST", "https://api.aptrinsic.com/v1/users/3@gma", true);
+    //     xhttp.setRequestHeader("Content-type", "application/json");
+    //     xhttp.setRequestHeader("X-APTRINSIC-API-KEY", "5d0b3830-9313-49dd-bd31-351af9a73c58");
+
+    //     xhttp.send({"role":"Testing"});
+    // }
+
     function UserAction() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -361,13 +376,69 @@ function transactiondone(ev1) {
                  alert(this.responseText);
              }
         };
-        xhttp.open("POST", "https://api.aptrinsic.com/v1/users/3@gma", true);
+        xhttp.open("POST", "https://demo-gssupprod1.gainsightcloud.com/v2/cockpit/cta/", true);
         xhttp.setRequestHeader("Content-type", "application/json");
-        xhttp.setRequestHeader("X-APTRINSIC-API-KEY", "5d0b3830-9313-49dd-bd31-351af9a73c58");
+        xhttp.setRequestHeader("accesskey", "b95b087d-e38c-430f-a7d5-ed272888c879");
 
-        xhttp.send("role","Testing");
+        xhttp.send({
+            "requests": [
+                {
+                    "record": {
+                    
+                        "Name": "Too many Support Tickets open for customer via PX",
+                       // "SFDCID": "TZHYUJB8QBNHYUIIY",//Used to Resolve the CompanyID
+                       "OwnerId":"1P01CJ1JNHV8EEATI004RNBLLWPZ98UINC63",
+                        //"OwnerEmail": "hsharma@gainsight.com", //Used to Resolve the OwnerID
+                        "DueDate": "2022-10-10",
+                        "type": "Risk",               //Pass Name of CTA Type
+                        "reason": "Support Risk",     //Pass Name of CTA Reason
+                        "status": "New",              //Pass Name of CTA Status
+                        "priority": "High"           //Pass Name of CTA Priority
+                        // "playbook": "Support Risk Playbook", // Name of playbook to apply
+                        // "Comments": "Support risk since too many tickets are open",
+                        // "isEscalaed__gc": false,        // Custom Fields to populate
+                        // "DT_Date__gc": "2020-04-28",
+                        // "DT_DateTime__gc": "2020-04-17T22:30:00Z",
+                        // "AdditionalNotes__gc": "Custom String field to populate",
+                        // "DT_Email__gc": "test@test.com",
+                        // "DT_MutliDDList__gc": "C; D",   // Multi-select values with names
+                        // "DT_Percentage__gc": "15.67",
+                        // "DT_String__gc": "Hey there",
+                        // "Support_URL__gc": "https://www.google.com",
+                        // "DT_RichTextArea__gc": "Hey there, How are you!!!"
+                    },
+                    // "linkedObjects": [       //Linking an object while creating a CTA
+                    //     {
+                    //         "id": "1Z021IVUBQ4OXQAILPJLBKGVQ2XS41KZ9L8S",
+                    //         "store": "MDA",
+                    //         "objectName": "support__gc" //Linked Object Name
+                    //     }
+                    // ]
+                }
+            ],
+            // "lookups": {                  // To Resolve GSID Fields using any key
+            //     "OwnerId": {              // Resolving CTA Owner via
+            //         "fields": {
+            //             "OwnerEmail": "Email"
+            //         },
+            //         "lookupField": "Gsid",
+            //         "objectName": "gsuser",
+            //         "multiMatchOption": "FIRSTMATCH",
+            //         "onNoMatch": "ERROR"
+            //     },
+            //     "CompanyId": {         // Resolving Company using SFDCID
+            //         "fields": {
+            //             "SFDCID": "sfdcid"
+            //         },
+            //         "lookupField": "Gsid",
+            //         "objectName": "company",
+            //         "multiMatchOption": "FIRSTMATCH",
+            //         "onNoMatch": "ERROR"
+            //     }
+        
+            // }
+        });
     }
-
 
 
 // function segment_track(){
