@@ -352,6 +352,24 @@ function transactiondone(ev1) {
     });
 }
 
+
+
+    function UserAction() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+             if (this.readyState == 4 && this.status == 200) {
+                 alert(this.responseText);
+             }
+        };
+        xhttp.open("POST", "https://api.aptrinsic.com/v1/users/3@gma", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.setRequestHeader("X-APTRINSIC-API-KEY", "5d0b3830-9313-49dd-bd31-351af9a73c58");
+
+        xhttp.send("role","Testing");
+    }
+
+
+
 // function segment_track(){
 
 //     analytics.track({
