@@ -386,58 +386,20 @@ function transactiondone(ev1) {
                     "record": {
                     
                         "Name": "Too many Support Tickets open for customer via PX",
-                       // "SFDCID": "TZHYUJB8QBNHYUIIY",//Used to Resolve the CompanyID
+                      
                        "CompanyId": "1P02IPMAEL4M3CQGY4QNW5UXA45SWOQN38NL",
                        "OwnerId":"1P01CJ1JNHV8EEATI004RNBLLWPZ98UINC63",
-                        //"OwnerEmail": "hsharma@gainsight.com", //Used to Resolve the OwnerID
+                     
                         "DueDate": "2022-10-10",
-                        "type": "Risk",               //Pass Name of CTA Type
-                        "reason": "Support Risk",     //Pass Name of CTA Reason
-                        "status": "New",              //Pass Name of CTA Status
-                        "priority": "High"           //Pass Name of CTA Priority
-                        // "playbook": "Support Risk Playbook", // Name of playbook to apply
-                        // "Comments": "Support risk since too many tickets are open",
-                        // "isEscalaed__gc": false,        // Custom Fields to populate
-                        // "DT_Date__gc": "2020-04-28",
-                        // "DT_DateTime__gc": "2020-04-17T22:30:00Z",
-                        // "AdditionalNotes__gc": "Custom String field to populate",
-                        // "DT_Email__gc": "test@test.com",
-                        // "DT_MutliDDList__gc": "C; D",   // Multi-select values with names
-                        // "DT_Percentage__gc": "15.67",
-                        // "DT_String__gc": "Hey there",
-                        // "Support_URL__gc": "https://www.google.com",
-                        // "DT_RichTextArea__gc": "Hey there, How are you!!!"
+                        "type": "Risk",              
+                        "reason": "Support Risk",     
+                        "status": "New",              
+                        "priority": "High"           
+                     
                     },
-                    // "linkedObjects": [       //Linking an object while creating a CTA
-                    //     {
-                    //         "id": "1Z021IVUBQ4OXQAILPJLBKGVQ2XS41KZ9L8S",
-                    //         "store": "MDA",
-                    //         "objectName": "support__gc" //Linked Object Name
-                    //     }
-                    // ]
+                
                 }
             ],
-            // "lookups": {                  // To Resolve GSID Fields using any key
-            //     "OwnerId": {              // Resolving CTA Owner via
-            //         "fields": {
-            //             "OwnerEmail": "Email"
-            //         },
-            //         "lookupField": "Gsid",
-            //         "objectName": "gsuser",
-            //         "multiMatchOption": "FIRSTMATCH",
-            //         "onNoMatch": "ERROR"
-            //     },
-            //     "CompanyId": {         // Resolving Company using SFDCID
-            //         "fields": {
-            //             "SFDCID": "sfdcid"
-            //         },
-            //         "lookupField": "Gsid",
-            //         "objectName": "company",
-            //         "multiMatchOption": "FIRSTMATCH",
-            //         "onNoMatch": "ERROR"
-            //     }
-        
-            // }
         });
     }
 
