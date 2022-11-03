@@ -354,54 +354,7 @@ function transactiondone(ev1) {
 
 
 
-//PX API CALL
-    // function UserAction() {
-    //     var xhttp = new XMLHttpRequest();
-    //     xhttp.onreadystatechange = function() {
-    //          if (this.readyState == 4 && this.status == 200) {
-    //              alert(this.responseText);
-    //          }
-    //     };
-    //     xhttp.open("POST", "https://api.aptrinsic.com/v1/users/3@gma", true);
-    //     xhttp.setRequestHeader("Content-type", "application/json");
-    //     xhttp.setRequestHeader("X-APTRINSIC-API-KEY", "5d0b3830-9313-49dd-bd31-351af9a73c58");
 
-    //     xhttp.send({"role":"Testing"});
-    // }
-
-    function UserAction() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-             if (this.readyState == 4 && this.status == 200) {
-                 alert(this.responseText);
-             }
-        };
-        xhttp.open("POST", "https://demo-gssupprod1.gainsightcloud.com/v2/cockpit/cta/", true);
-        xhttp.setRequestHeader("Content-type", "application/json");
-        xhttp.setRequestHeader("accesskey", "b95b087d-e38c-430f-a7d5-ed272888c879");
-
-        xhttp.send({
-            "requests": [
-                {
-                    "record": {
-                    
-                        "Name": "Too many Support Tickets open for customer via PX",
-                      
-                       "CompanyId": "1P02IPMAEL4M3CQGY4QNW5UXA45SWOQN38NL",
-                       "OwnerId":"1P01CJ1JNHV8EEATI004RNBLLWPZ98UINC63",
-                     
-                        "DueDate": "2022-10-10",
-                        "type": "Risk",              
-                        "reason": "Support Risk",     
-                        "status": "New",              
-                        "priority": "High"           
-                     
-                    },
-                
-                }
-            ],
-        });
-    }
 
 
 // function segment_track(){
