@@ -41,11 +41,11 @@ var config={kcAllowedFuncNames:["zendeskchat"],"secureCookie":true};
 //px self tag AP-K0EYK7ZWBNRU-2
 //Dileep's tag key AP-6WAJA3OATHHI-2
 //PX tag configuration
-  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
-      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
-    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
-    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-K0EYK7ZWBNRU-2",config);
+//   (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+//       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+//     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+//     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+//   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-K0EYK7ZWBNRU-2",config);
   
 // static file load of aptrinsic.js file
 
@@ -54,6 +54,22 @@ var config={kcAllowedFuncNames:["zendeskchat"],"secureCookie":true};
 //   var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
 //   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 // })(window,document,"https://vineshgvk.github.io/Basic_Website/aptrinsic.js","AP-K0EYK7ZWBNRU-2",config);
+
+
+//Engagement_checksum_First product_Production.json
+
+//checksum tag configuration
+  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://vineshgvk.github.io/Basic_Website/aptrinsic.js","AP-K0EYK7ZWBNRU-2", {
+    
+   
+    "engagementChecksumFileUrl": "https://vineshgvk.github.io/Basic_Website/Engagement_checksum_First product_Production.json"
+    }
+  );
+
 
 
 
