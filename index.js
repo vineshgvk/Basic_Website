@@ -273,7 +273,24 @@ function deleteAllCookies() {
 //contextual search through labels
 aptrinsic("bot", "search", {"labels": ["articles"]});
 
+aptrinsic('addListener', 'PX_FTU_Button_Clicked', function(eventData) {
+    console.log('Custom event PX_FTU_Button_Clicked received printing from source code:', eventData);
 
+    // Perform the action you want to trigger on your application
+    // Example:
+    // window.location.href = '/your/desired/page';
+    // or
+    // yourFunctionToTriggerFTU();
+    // or
+    // document.getElementById('yourElement').style.display = 'block';
+
+    //Example to trigger a function.
+    function yourFunctionToTriggerFTU(){
+      console.log("FTU triggered by Gainsight PX button logging from source code");
+      //Do your stuff.
+    }
+    yourFunctionToTriggerFTU();
+});
 // const a=document.querySelector(".beginbtn");
 // a.addEventListener('click',onclicked);
 // function onclicked(e){
